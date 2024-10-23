@@ -15,6 +15,15 @@ const dashboard: AppRouteModule = {
   },
   children: [
     {
+      path: 'table',
+      name: 'Table',
+      component: () => import('/@/views/test/index.vue'),
+      meta: {
+        // affix: true,
+        title: 'Test Table CSV',
+      },
+    },
+    {
       path: 'analysis',
       name: 'Analysis',
       component: () => import('/@/views/dashboard/analysis/index.vue'),
